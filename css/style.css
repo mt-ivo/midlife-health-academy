@@ -501,3 +501,11 @@ footer a:hover {
     padding: 30px;
     text-align: left;
 }
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #BC8F8F;
+}
