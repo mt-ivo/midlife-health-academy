@@ -509,3 +509,73 @@ footer a {
 footer a:hover {
     color: #BC8F8F;
 }
+
+
+
+
+/* =========================
+   PRICES PAGE
+========================= */
+
+.prices-section {
+    padding: 20px 8% 60px;
+    background-color: #F8F3ED;
+}
+
+.price-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.price-box {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.price-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.price-box h3 {
+    margin-bottom: 15px;
+}
+
+.price-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.price-link h3 {
+    color: #344D43;
+}
+
+.price-link:hover h3 {
+    color: #BC8F8F;
+}
+
+.price-link .price {
+    color: #BC8F8F;
+}
+
+.price-box .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #BC8F8F;
+}
+
+@media (max-width: 600px) {
+    .price-container {
+        grid-template-columns: 1fr;
+    }
+}
