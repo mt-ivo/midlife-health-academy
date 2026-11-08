@@ -1,3 +1,4 @@
+
 /* =========================
    General Styling
 ========================= */
@@ -33,11 +34,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 25px 8%;
-
     background-color: #E7ECE3;
-
     position: sticky;
     top: 0;
     z-index: 100;
@@ -50,9 +48,16 @@ a {
     color: #344D43;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+}
+
 .nav-links a {
     text-decoration: none;
-    margin-left: 25px;
     color: #344D43;
     font-weight: 500;
 }
@@ -85,17 +90,12 @@ a {
 
 .main-button {
     display: inline-block;
-
     background-color: #BC8F8F;
     color: white;
-
     padding: 14px 28px;
-
     border-radius: 8px;
-
     text-decoration: none;
     font-weight: 600;
-
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -128,13 +128,9 @@ a {
 .section-image {
     width: 100%;
     max-width: 800px;
-
     display: block;
-
     margin: 30px auto;
-
     border-radius: 16px;
-
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
@@ -160,24 +156,17 @@ a {
 
 .service-box {
     background: white;
-
     padding: 35px;
-
     border-radius: 16px;
-
     text-decoration: none;
     color: #344D43;
-
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
     transition: 0.3s ease;
 }
 
 .service-box:hover {
     transform: translateY(-6px);
-
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-
     background-color: #FAFAFA;
 }
 
@@ -235,13 +224,9 @@ a {
 
 .price-panel {
     background: white;
-
     padding: 35px;
-
     border-radius: 16px;
-
     max-width: 500px;
-
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
@@ -261,9 +246,7 @@ a {
 
 .contact {
     text-align: center;
-
     padding: 80px 20px;
-
     background-color: #E7ECE3;
 }
 
@@ -291,37 +274,162 @@ a {
 
 footer {
     text-align: center;
-
     padding: 25px;
-
     font-size: 14px;
-
     background-color: #344D43;
-    color: white;
+    color: #F8F3ED;
+}
+
+footer p {
+    margin: 0 0 8px;
+}
+
+footer a {
+    color: #E7ECE3;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #BC8F8F;
 }
 
 /* =========================
-   Mobile
+   Testimonials
+========================= */
+
+.testimonials {
+    text-align: center;
+    padding: 80px 8%;
+    background-color: #E7ECE3;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonials-intro {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    line-height: 1.7;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 45px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.stars {
+    color: #BC8F8F;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.testimonial-card h3 {
+    font-size: 1.05rem;
+    color: #344D43;
+    margin-bottom: 0;
+}
+
+.google-review-text {
+    margin-bottom: 20px;
+}
+
+.review-button {
+    display: inline-block;
+    background-color: #BC8F8F;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.review-button:hover {
+    background-color: #A97D7D;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   Mobile Styling
 ========================= */
 
 @media (max-width: 768px) {
 
+    /* Navigation */
+
     .navbar {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         gap: 15px;
+        padding: 20px 5%;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 8px 18px;
+        text-align: center;
     }
 
     .nav-links a {
-        margin: 0 10px;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Hero */
+
+    .hero {
+        padding: 70px 20px;
     }
 
     .hero h1 {
         font-size: 2.2rem;
     }
 
+    /* Page Intro */
+
     .page-intro h1 {
         font-size: 2.1rem;
     }
+
+    /* Sections */
 
     .services h2,
     .info-section h2,
@@ -336,121 +444,8 @@ footer {
     .info-section {
         padding: 50px 8%;
     }
-}
 
-/* =========================
-   Testimonials
-========================= */
-
-.testimonials {
-    text-align: center;
-
-    padding: 80px 8%;
-
-    background-color: #E7ECE3;
-}
-
-.testimonials h2 {
-    font-size: 2rem;
-
-    margin-bottom: 20px;
-}
-
-.testimonials-intro {
-    max-width: 700px;
-
-    margin: 0 auto 45px;
-
-    line-height: 1.7;
-}
-
-.testimonial-container {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-
-    max-width: 1200px;
-
-    margin: 0 auto 45px;
-}
-
-.testimonial-card {
-    background-color: white;
-
-    padding: 35px 25px;
-
-    border-radius: 16px;
-
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-
-    transition: 0.3s ease;
-}
-
-.testimonial-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.stars {
-    color: #BC8F8F;
-
-    font-size: 1.4rem;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 20px;
-}
-
-.testimonial-text {
-    font-style: italic;
-
-    line-height: 1.8;
-
-    margin-bottom: 25px;
-}
-
-.testimonial-card h3 {
-    font-size: 1.05rem;
-
-    color: #344D43;
-
-    margin-bottom: 0;
-}
-
-.google-review-text {
-    margin-bottom: 20px;
-}
-
-.review-button {
-    display: inline-block;
-
-    background-color: #BC8F8F;
-
-    color: white;
-
-    padding: 14px 28px;
-
-    border-radius: 8px;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-.review-button:hover {
-    background-color: #A97D7D;
-
-    transform: translateY(-2px);
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
+    /* Testimonials */
 
     .testimonial-container {
         grid-template-columns: 1fr;
@@ -460,4 +455,49 @@ footer {
         font-size: 1.7rem;
     }
 
+    .testimonials {
+        padding: 60px 6%;
+    }
+}
+
+/* =========================
+   Small Mobile Screens
+========================= */
+
+@media (max-width: 380px) {
+
+    .navbar {
+        padding: 18px 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 8px 14px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+}
+.info-section {
+    background-color: #F8F3ED;
+    padding: 40px 8%;
+}
+
+.alternate-section {
+    background-color: #E7ECE3;
+    padding: 40px 8%;
+}
+
+.resource-card {
+    background-color: #F8F3ED;
+    border: 1px solid #E7ECE3;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: left;
 }
